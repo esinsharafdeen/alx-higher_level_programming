@@ -1,3 +1,4 @@
 #!/usr/bin/python3
-print("\"Programming is like building a multilingual puzzle")
-
+#!/usr/bin/python3
+def magic_calculation(a, b):
+    return (98 + a ** b)
