@@ -1,13 +1,6 @@
 #!/usr/bin/node
+const myVar = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 
-function multi_language_loop(){
-	let languages = ["C is fun", "Python is cool", "JavaScript is amazing"];
-
-	for(let i = 0; i < languages.length; i++){
-		console.log(languages[i]);
-	}
-	console.log("\n");
-}
-
-multi_language_loop();
-
+myVar.forEach((element) => {
+  console.log(element);
+});

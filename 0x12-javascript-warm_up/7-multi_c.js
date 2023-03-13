@@ -1,15 +1,10 @@
 #!/usr/bin/node
+const x = process.argv[2];
 
-function multi_c(){
-	let number = parseInt(process.argv[2]);
-
-	if(isNaN(number)){
-		console.log("Missing number of occurrences\n");} else{
-			for(let i = 0; i < number; i++){
-				console.log("C is fun");
-			}
-			console.log("\n");
-		}
+if (!parseInt(x)) {
+  console.log('Missing number of occurrences');
+} else {
+  for (let i = 0; i < x; i++) {
+    console.log('C is fun');
+  }
 }
-
-multi_c();
