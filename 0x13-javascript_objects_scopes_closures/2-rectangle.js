@@ -1,14 +1,13 @@
 #!/usr/bin/node
-
+/**
+ * Check the parameters provided
+ */
 class Rectangle {
-  constructor(w, h) {
-    if (Number.isInteger(w) && w > 0 && Number.isInteger(h) && h > 0) {
+  constructor (w, h) {
+    if (typeof w === 'number' && w > 0 && typeof h === 'number' && h > 0) {
       this.width = w;
       this.height = h;
-    } else {
-      // create an empty object if w or h is not a positive integer
-      return {};
     }
   }
 }
-
+module.exports = Rectangle;
